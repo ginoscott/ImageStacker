@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Upper bound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUpper" />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:id="@+id/numpickUpper"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvUpper" />
+    <TextView
+        android:text="Lower bound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLower"
+        android:layout_below="@id/numpickUpper"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="23.0dp" />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_below="@id/tvLower"
+        android:id="@+id/numpickLower"
+        android:layout_alignParentLeft="true" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvUpper"
+        android:id="@+id/imgViewAdjust"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="center"
+        android:layout_marginLeft="54.0dp"
+        android:layout_marginRight="10.5dp" />
+    <Button
+        android:text="Preview Bounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numpickLower"
+        android:id="@+id/btnSetBounds"
+        android:layout_marginTop="16.5dp" />
+    <Button
+        android:text="Save and Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSetBounds"
+        android:id="@+id/btnFinishAdjust" />
+</RelativeLayout>
